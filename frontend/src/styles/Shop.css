@@ -1,0 +1,49 @@
+/* Shop.css */
+
+.shop-container {
+    padding-top: 80px;
+}
+
+.shop-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.filter-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-button {
+    padding: 8px 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #555;
+}
+
+.filter-button.active {
+    background-color: #ffcc00;
+    color: #333;
+}

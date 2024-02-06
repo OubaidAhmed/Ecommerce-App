@@ -1,0 +1,13 @@
+.home-container {
+    padding-top: 80px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.category-heading {
+    text-align: center;
+    margin-top: 0px;
+    text-decoration: underline;
+}

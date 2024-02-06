@@ -1,0 +1,63 @@
+/* Cart.css */
+.cart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding-top: 60px;
+
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-total p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.proceed-to-checkout-button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Make it an inline-block element to match button styling */
+}
+
+.proceed-to-checkout-button:hover {
+    background-color: #219653;
+}
