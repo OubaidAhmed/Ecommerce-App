@@ -10,7 +10,8 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: .5s ease-in-out;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
+    z-index: 999;
 }
 
 .logo h3 {
