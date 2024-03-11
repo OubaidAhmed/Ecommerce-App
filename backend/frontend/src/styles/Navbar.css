@@ -1,8 +1,6 @@
-/* Navbar.css */
-
 .navbar {
     display: flex;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     justify-content: space-between;
@@ -26,7 +24,8 @@
     gap: 20px;
 }
 
-.nav-link, .cart-icon {
+.nav-link,
+.cart-icon {
     text-decoration: none;
     color: #333;
     font-weight: bold;
