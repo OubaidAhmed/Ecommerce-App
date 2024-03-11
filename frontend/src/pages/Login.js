@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import '../styles/Login.css'; // Import the CSS file
+import '../styles/Login.css'; 
 
 const Login = () => {
     const { dispatch } = useAuth();
@@ -19,7 +19,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         try {
             e.preventDefault();
-            const response = await axios.post('http://localhost:5000/api/users/login', formData);
+            const response = await axios.post(`${window.location.origin}/api/users/login`, formData);
             console.log('Login successful:', response.data);
 
             localStorage.setItem('token', response.data.token);

@@ -1,4 +1,3 @@
-// Cart.js
 import React, { useEffect } from 'react';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
@@ -13,7 +12,7 @@ const Cart = () => {
     useEffect(() => {
         const fetchUserCart = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/users/cart', {
+                const response = await axios.get(`${window.location.origin}/api/users/cart`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

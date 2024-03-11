@@ -15,13 +15,11 @@ const getProducts = async (category, priceRange) => {
 
     console.log('Full API Response:', responseData);
 
-    // Assuming the API response has a 'data' property containing the array of products
     const data = responseData.products || [];
 
 
-    // Ensure 'priceRange' is defined
+    
     if (priceRange) {
-      // Simulate client-side filtering based on the selected price range
       switch (priceRange) {
         case 'low':
           return { products: data.filter((product) => product.price <= 1200) };
@@ -30,7 +28,6 @@ const getProducts = async (category, priceRange) => {
         case 'high':
           return { products: data.filter((product) => product.price > 1500) };
         default:
-          // No price range filter
           return { products: data };
       }
     }

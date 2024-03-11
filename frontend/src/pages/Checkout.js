@@ -1,4 +1,3 @@
-// Checkout.js
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import '../styles/Checkout.css';
@@ -39,7 +38,7 @@ const Checkout = () => {
     const handlePayNow = async () => {
         if (isAuthenticated) {
             try {
-                await axios.post('http://localhost:5000/api/orders', { cart }, {
+                await axios.post(`${window.location.origin}/api/orders`, { cart }, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

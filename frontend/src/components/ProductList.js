@@ -1,7 +1,7 @@
 // ProductList.jsx
 import React, { useState, useEffect } from 'react';
 import apiService from '../services/apiService';
-import ProductCard from './ProductCard'; // Correct import path
+import ProductCard from './ProductCard';
 import '../styles/ProductList.css';
 
 const ProductList = ({ category, priceRange }) => {

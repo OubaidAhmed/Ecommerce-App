@@ -1,5 +1,3 @@
-// Shop.js
-
 import React, { useState } from 'react';
 import ProductList from '../components/ProductList';
 import '../styles/Shop.css';
@@ -14,7 +12,7 @@ const Shop = () => {
 
     const handlePriceRangeChange = (priceRange) => {
         setSelectedPriceRange(priceRange);
-        // Additional logic for fetching products based on the selected price range
+        
     };
 
     return (
@@ -43,7 +41,7 @@ const Shop = () => {
                         >
                             Laptops
                         </button>
-                        {/* Add more categories as needed */}
+                        
                     </div>
                 </div>
 
@@ -78,7 +76,6 @@ const Shop = () => {
                 </div>
             </div>
 
-            {/* Conditionally render ProductList based on the selected category */}
             {selectedCategory === 'all' && (
                 <>
                     <ProductList category="smartphones" priceRange={selectedPriceRange} />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import '../styles/Signup.css'; // Import the CSS file
+import '../styles/Signup.css'; 
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -20,7 +20,7 @@ const Signup = () => {
         try {
             e.preventDefault();
             console.log('Form data submitted:', formData);
-            const response = await axios.post('http://localhost:5000/api/users/signup', formData);
+            const response = await axios.post(`${window.location.origin}/api/users/signup`, formData);
             console.log('Signup successful:', response.data);
             navigate('/login');
         } catch (error) {
